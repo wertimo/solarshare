@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SolarShare - Coming Soon</title>
+    <meta name="description" content="Join the waitlist for SolarShare, a new innovative solar energy provider.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,29 +13,40 @@
         <h1>SolarShare</h1>
         <p>We're launching soon! Join the waitlist to stay updated.</p>
         <button id="joinWaitlistButton">Join Waitlist</button>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
     </div>
 
-    <form id="waitlistForm" action="https://formspree.io/f/mpzvgrrj" method="POST">
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="firstName" required>
-        
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" name="lastName" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required>
-        
-        <label for="interest">Why are you interested?</label>
-        <textarea id="interest" name="interest" required></textarea>
-        
-        <label for="challenges">Have you faced any challenges with other providers?</label>
-        <textarea id="challenges" name="challenges"></textarea>
-        
-        <button type="submit">Submit</button>
-    </form>
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join the Waitlist</h2>
+            <form id="waitlistForm" action="https://formspree.io/f/mpzvgrrj" method="POST">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="interest">Why are you interested?</label>
+                <textarea id="interest" name="interest" required></textarea>
+                
+                <label for="challenges">Have you faced any challenges with other providers?</label>
+                <textarea id="challenges" name="challenges"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
