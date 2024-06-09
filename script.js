@@ -2,12 +2,6 @@
 // const supabaseUrl = 'https://bxcliaujryahksdpbewc.supabase.co';
 // const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4Y2xpYXVqcnlhaGtzZHBiZXdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc5NTQ1NjQsImV4cCI6MjAzMzUzMDU2NH0.jMqHXkcGoDBvb0vW0aP9OyGcYndPHCu5EnNIwzFwKKQ';
 
-
-// Supabase initialization
-const supabaseUrl = 'https://bxcliaujryahksdpbewc.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4Y2xpYXVqcnlhaGtzZHBiZXdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc5NTQ1NjQsImV4cCI6MjAzMzUzMDU2NH0.jMqHXkcGoDBvb0vW0aP9OyGcYndPHCu5EnNIwzFwKKQ';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
-
 // Form submission
 document.getElementById('waitlistForm').onsubmit = async function(event) {
     event.preventDefault();
@@ -38,6 +32,11 @@ document.getElementById('waitlistForm').onsubmit = async function(event) {
         console.error('Error submitting form:', error);
     }
 };
+
+// Supabase initialization
+const supabaseUrl = 'https://bxcliaujryahksdpbewc.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4Y2xpYXVqcnlhaGtzZHBiZXdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc5NTQ1NjQsImV4cCI6MjAzMzUzMDU2NH0.jMqHXkcGoDBvb0vW0aP9OyGcYndPHCu5EnNIwzFwKKQ';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 document.addEventListener("DOMContentLoaded", function() {
     // Modal functionality
