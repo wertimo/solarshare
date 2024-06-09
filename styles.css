@@ -25,7 +25,6 @@ body {
     color: white;
     z-index: 1;
     position: relative;
-    padding: 20px;
 }
 
 button {
@@ -50,10 +49,10 @@ button {
 
 .modal-content {
     background-color: #fff;
-    margin: 10% auto;
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 80%;
     max-width: 500px;
 }
 
@@ -84,12 +83,4 @@ input, textarea, button {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
-}
-
-@media (min-width: 600px) {
-    .modal-content {
-        margin: 5% auto;
-        padding: 20px;
-        width: 80%;
-    }
 }
