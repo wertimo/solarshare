@@ -1,31 +1,46 @@
-document.getElementById('joinWaitlistButton').onclick = function() {
-    document.getElementById('formModal').style.display = 'flex';
+// Initialize Supabase
+const supabaseUrl = 'YOUR_SUPABASE_URL';
+const supabaseKey = 'YOUR_SUPABASE_KEY';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+// Modal functionality
+const joinWaitlistButton = document.getElementById('joinWaitlistButton');
+const formModal = document.getElementById('formModal');
+const closeModal = document.getElementById('closeModal');
+
+joinWaitlistButton.onclick = function() {
+    formModal.style.display = 'flex';
 }
 
-document.getElementsByClassName('close')[0].onclick = function() {
-    document.getElementById('formModal').style.display = 'none';
+closeModal.onclick = function() {
+    formModal.style.display = 'none';
 }
 
 window.onclick = function(event) {
-    if (event.target == document.getElementById('formModal')) {
-        document.getElementById('formModal').style.display = 'none';
+    if (event.target === formModal) {
+        formModal.style.display = 'none';
     }
 }
 
-document.getElementById('waitlistForm').onsubmit = function(event) {
+// Form submission
+document.getElementById('waitlistForm').onsubmit = async function(event) {
     event.preventDefault();
-    fetch(this.action, {
-        method: this.method,
-        body: new FormData(this),
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            alert('Thank you for joining the waitlist!');
-            document.getElementById('formModal').style.display = 'none';
-        } else {
-            alert('There was a problem submitting your form.');
-        }
-    });
+
+    const firstName = document.getElementById('firstName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    const { data, error } = await supabase
+        .from('waitlist')
+        .insert([
+            { first_name: firstName, email: email, phone_number: phone }
+        ]);
+
+    if (error) {
+        alert('There was a problem submitting your form.');
+        console.error(error);
+    } else {
+        alert('Thank you for joining the waitlist!');
+        formModal.style.display = 'none';
+    }
 };
