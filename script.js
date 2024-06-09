@@ -3,9 +3,6 @@
 // const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4Y2xpYXVqcnlhaGtzZHBiZXdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc5NTQ1NjQsImV4cCI6MjAzMzUzMDU2NH0.jMqHXkcGoDBvb0vW0aP9OyGcYndPHCu5EnNIwzFwKKQ';
 
 // Initialize Supabase
-
-import { createClient } from '@supabase/supabase-js'
-
 const supabaseUrl = 'https://bxcliaujryahksdpbewc.supabase.co'
 const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ4Y2xpYXVqcnlhaGtzZHBiZXdjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTc5NTQ1NjQsImV4cCI6MjAzMzUzMDU2NH0.jMqHXkcGoDBvb0vW0aP9OyGcYndPHCu5EnNIwzFwKKQ';
 const supabase = createClient(supabaseUrl, supabaseKey)
