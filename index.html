@@ -3,21 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solshr</title>
+    <title>SOLSHR - Solar Energy for Everyone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="container">
-        <h1>Solshr</h1>
-        <p>We're launching soon! Join the waitlist to stay updated.</p>
-        <button id="joinWaitlistButton">Join Waitlist</button>
-    </div>
+    <header>
+        <nav>
+            <div class="logo"><a href="#">SOLSHR</a>
+                <div class="burger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#mission">MISSION</a></li>
+                <li><a href="#how-it-works">HOW IT WORKS</a></li>
+                <li><a href="#" id="joinWaitlistButton" class="btn">JOIN WAITLIST</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="content">
+                <h1>SOLAR ENERGY STARTING WITH €1</h1>
+                <a href="#" id="joinWaitlistHero" class="btn">JOIN WAITLIST</a>
+            </div>
+        </section>
+        <section id="mission">
+            <div class="content">
+                <h2>OUR MISSION IS TO MAKE SOLAR ENERGY ACCESSIBLE THROUGH COMMUNITY DRIVEN SOLAR FARMS</h2>
+                <p>GET A DISCOUNT ON YOUR NEXT ENERGY BILL</p>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <h2>HOW IT WORKS:</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="circle">1</div>
+                    <h3>INVESTING</h3>
+                    <p>If you're working with us you're an investor, not just a customer.</p>
+                </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                    <h3>BUILDING</h3>
+                    <p>Most of your money invested will go directly into building and maintaining solar farms.</p>
+                </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                    <h3>ROI</h3>
+                    <p>We made it easy for every consumer to get a discount on their energy bill.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="icon instagram">Instagram</a>
+            <a href="#" class="icon discord">Discord</a>
+            <a href="#" class="icon tiktok">TikTok</a>
+            <a href="#" class="icon youtube">YouTube</a>
+        </div>
+    </footer>
 
     <div id="formModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
-            <!-- Embed Google Form -->
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsdpny_75yvk2CTb3i43JLlw4L--lqovAwIA4qxFKfARpVOA/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
