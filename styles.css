@@ -66,7 +66,7 @@ main {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-image: url('join-waitlist2.png');
+    background-image: url('https://wertimo.github.io/solarshare/join-waitlist2.png');
     background-size: cover;
     background-position: center;
 }
@@ -164,10 +164,10 @@ footer {
     background-repeat: no-repeat;
 }
 
-.instagram { background-image: url('instagram-icon.png'); }
-.discord { background-image: url('discord-icon.png'); }
-.tiktok { background-image: url('tiktok-icon.png'); }
-.youtube { background-image: url('youtube-icon.png'); }
+.instagram { background-image: url('https://wertimo.github.io/solarshare/instagram-icon.png'); }
+.discord { background-image: url('https://wertimo.github.io/solarshare/discord-icon.png'); }
+.tiktok { background-image: url('https://wertimo.github.io/solarshare/tiktok-icon.png'); }
+.youtube { background-image: url('https://wertimo.github.io/solarshare/youtube-icon.png'); }
 
 .modal {
     display: none;
