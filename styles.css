@@ -85,14 +85,15 @@ main {
     justify-content: center;
     height: 30vh;
     text-align: center;
+    padding: 2rem;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
     text-align: center;
+    
 }
 
 #three-steps .steps {
