@@ -242,6 +242,7 @@ footer {
 
     section {
         flex-direction: column;
+        padding: 2rem;
     }
 
     .image-placeholder, .content {
