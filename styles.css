@@ -83,24 +83,29 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 50vh;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
     text-align: center;
-    
 }
 
-#three-steps .steps {
+#how-it-works {
+    gap: 5rem;
+}
+
+
+.steps {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 30vh;
+    
 }
 
 .p {
@@ -132,13 +137,7 @@ h1 {
     margin-bottom: 1rem;     
 } 
 
-h2 {
-    font-size: 3vw;
-    font-weight: bold;
-    margin-bottom: 1rem;     
-}
-
-h3 {
+h2, h3 {
     font-size: 3vw;
     font-weight: bold;
     margin-bottom: 1rem;     
@@ -147,7 +146,7 @@ h3 {
 footer { 
     background-color: #333;
     color: var(--secondary-color);
-    padding: 4rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -185,14 +184,23 @@ footer {
 }
 
 .modal-content {
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
+    padding-left: 20px;
+    width: 100%;
+    max-width: 360px;
     position: relative;
+    align-items: center;
 }
 
 .close {
-    display: none;
+    color: #aaa;
+    float: right;      
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .burger {
@@ -223,26 +231,22 @@ footer {
 
     nav ul.show {
         display: flex; 
+        
     }
 
     .burger {
         display: flex;
         position: absolute;
-        top: 1.4rem;
+        top: 1.5rem;
         right: 1rem;
     }
 
-    h2 {
+    h2, h3 {
         font-size: 5vw;    
-    }
-
-    h3 {
-        font-size: 4vw;    
     }
 
     section {
         flex-direction: column;
-        padding: 2rem;
     }
 
     .image-placeholder, .content {
