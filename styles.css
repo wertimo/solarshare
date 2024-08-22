@@ -83,7 +83,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     text-align: center;
     padding: 1rem;
 }
@@ -92,7 +92,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -247,6 +247,7 @@ footer {
 
     section {
         flex-direction: column;
+        padding-bottom: 2rem;
     }
 
     .image-placeholder, .content {
@@ -258,16 +259,18 @@ footer {
     }
 
     #hero {
-        height: 120vw;
+        height: 155vw;
     }
 
     #how-it-works .steps {
         flex-direction: column;
-        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+        height: 100vw;
     }
 
     .step {
         width: 100%;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        
     }
 }
